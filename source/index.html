@@ -1,0 +1,80 @@
+---
+title: 首頁
+layout: ./source/layout.ejs
+engine: ejs
+current: index
+---
+  
+<div class="container">
+  <div class="start-page d-none" data-page>
+    <div class="title-area d-flex justify-content-center align-items-center">
+      <h1 class="title-area__title text-white me-4">60</h1>
+      <div class="position-relative">
+        <p class="title-area__text fs-3">
+          SECONDS <br> CHALLENGE
+        </p>
+        <div class="title-area__symbols text-white fs-5 position-absolute top-0 end-0 mt-4
+             border-bottom border-white border-4">
+          +−×÷
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-dark btn-lg start-button fs-6
+                                 d-block mx-auto text-primary">
+      START!
+    </button>
+    <p class="text-center fst-italic text-white fw-normal fs-8 mb-0">
+      try to answer more as you can
+    </p>
+  </div>
+  <div class="game-page d-none" data-page>
+    <div class="d-flex justify-content-between align-items-center mb-large">
+      <div>
+        <p class="fs-7 m-0 text-white score py-2 px-4 border border-4 border-white">
+          60 SECONDS CHALLENGE
+        </p>
+        <div class="d-flex align-items-center">
+          <p class="py-3 px-4 bg-white text-primary fs-7 mb-0 me-2">score</p>
+          <p class="fs-5 text-dark m-0" data-score-panel>
+            001
+          </p>
+        </div>
+      </div>
+      <div class="time fs-3 fst-italic text-white fw-bold"
+           data-time-panel>
+        00:59
+      </div>
+    </div>
+    <div class="count-area d-flex justify-content-between align-items-center">
+      <div class="operation d-flex justify-content-around align-items-center p-4
+                  fs-2 flex-grow-1">
+        <p class="text-dark me-4 mb-0" data-nmuber-first>11</p>
+        <p class="text-white me-4 mb-0" data-operation>x</p>
+        <p class="text-dark me-4 mb-0" data-nmuber-secondary>13</p>
+        <p class="text-white mb-0">=</p>
+      </div>
+      <div class="result">
+        <input type="number"
+               class="fs-2 bg-white text-dark px-4 form-control text-center"
+               data-result-input>
+        <p class="fst-italic text-white fw-normal text-center fs-8 mb-0">press enter to answer</p>
+      </div>
+    </div>
+  </div>
+  <div class="result-page d-flex flex-column align-items-center d-none" data-page>
+    <p class="fs-7 text-white py-2 px-4 border border-4 border-white mb-2">
+      60 SECONDS CHALLENGE
+    </p>
+    <p class="final-score fs-4">
+      <span class="text-white">—</span>
+      YOUR FINAL SCORE
+      <span class="text-white">—</span>
+    </p>
+    <p class="fs-2 mb-large" data-final-score>74</p>
+    <button type="button"
+            class="btn btn-dark btn-lg restart-button fs-6 text-primary" 
+            data-restart-button>
+      TRY AGAIN!
+    </button>
+  </div>
+</div>

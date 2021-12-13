@@ -1,0 +1,35 @@
+.start-page{
+  .title-area{
+    max-width: 740px;
+    margin: 0 auto;
+    &__title{
+      text-shadow: 12px 0px 0px #000000;
+    }
+    &__symbols::after{
+      content: "";
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background-color: $white;
+    }
+  }
+  .start-button{
+    width: 350px !important;
+  }
+}
+
+.game-page{
+  max-width: 740px;
+  margin: 0 auto;
+  .result{
+    max-width: 280px;
+  }
+}
+
+.result-page{
+  .restart-button {
+    width: 350px;
+  }
+}
