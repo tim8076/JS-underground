@@ -171,6 +171,7 @@ startButton.addEventListener('click', function (e) {
   e.preventDefault();
   showPage('game-page');
   showTime(60000);
+  score = 0;
   showScore(score);
   countDownTimer();
   creatQuestion();
