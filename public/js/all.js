@@ -45,9 +45,9 @@ function showScore(score) {
 
 function setScore(isCorrect) {
   if (time <= 60000 && time > 20000) {
-    isCorrect ? score += 1 : score - 1;
+    isCorrect ? score += 1 : score > 0 ? score -= 1 : score;
   } else if (time <= 20000) {
-    isCorrect ? score += 5 : score - 1;
+    isCorrect ? score += 5 : score > 0 ? score -= 1 : score;
   }
 } // 產生新題目
 
