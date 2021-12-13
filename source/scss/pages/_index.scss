@@ -24,7 +24,10 @@
   max-width: 740px;
   margin: 0 auto;
   .result{
-    max-width: 280px;
+    width: 280px;
+    &__input{
+      width: 280px;
+    }
   }
 }
 
