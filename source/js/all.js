@@ -22,7 +22,6 @@ const xScoreBoard = document.querySelector('[data-x-score]');
 const oScoreBoard = document.querySelector('[data-o-score]');
 let xScore = Number(getCookie('xScore')) || 0;
 let oScore = Number(getCookie('oScore')) || 0;
-console.log(xScore, oScore)
 const gameBoard = document.querySelector('.game-grid-container.gaming');
 const grids = document.querySelectorAll('.game-grid-container.gaming .col');
 const resultViews = document.querySelectorAll('[data-result-win]');
