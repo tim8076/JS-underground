@@ -1,15 +1,13 @@
 //colors
-$color-primary: #326dee !default;
-$color-secondary: #1ac886 !default;
-$color-danger: #d32752 !default;
+$color-primary: #FF6D70 !default;
+$color-primary-dark: #ED494C !default;
 $color-gray: #c2c2c2;
 $color-light: #fff !default;
 $color-dark: #000 !default;
 
 $theme-colors: (
   'primary':   $color-primary,
-  'secondary': $color-secondary,
-  'danger':    $color-danger,
+  'primary-dark': $color-primary-dark,
   'light':     $color-light,
   'dark':      $color-dark,
 );
